@@ -71,7 +71,7 @@ def ui_markdown():
         unsafe_allow_html=True
     )
 
-    st.markdown("<div class='title-container'><h1>Daas Chatbot 💬</h1></div>", unsafe_allow_html=True)
+    st.markdown("<div class='title-container'><h1>D&A Chatbot 💬</h1></div>", unsafe_allow_html=True)
 
     logo_path = "data/logo.png"
     st.sidebar.image(logo_path, width=280)
