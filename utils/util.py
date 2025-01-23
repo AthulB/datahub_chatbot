@@ -22,7 +22,7 @@ def create_option_link(df, main_category):
     options = {}
     for _,row in df_filtered.iterrows():
         link_name = row['Links'].strip()
-        link_url = construct_link(row['Answers'].strip(), row['Page'])
+        link_url = construct_link(row['Answers'].strip(), None)
         if f"• {row['Category']}" not in options:
             options[f"• {row['Category']}"] = set()
         options[f"• {row['Category']}"].add(f"- [{link_name}]({link_url})")
